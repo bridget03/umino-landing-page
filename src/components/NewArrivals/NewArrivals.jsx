@@ -69,13 +69,13 @@ function NewArrivals() {
       <div className="absolute left-41 flex gap-3">
         <button
           onClick={() => swiperRef.current?.slidePrev()}
-          className="md:hidden flex -translate-y-1/2 bg-white text-black p-4 rounded-full shadow-md hover:bg-[#111111] hover:text-white cursor-pointer z-10"
+          className="md:hidden flex -translate-y-1/2 bg-white text-black p-4 rounded-full border-1 border-[#EBEBEB] cursor-pointer z-10"
         >
           <MdArrowBackIosNew size={12} />
         </button>
         <button
           onClick={() => swiperRef.current?.slideNext()}
-          className="md:hidden flex -translate-y-1/2 bg-white text-black p-4 rounded-full shadow-md hover:bg-[#111111] hover:text-white cursor-pointer z-10"
+          className="md:hidden flex -translate-y-1/2 bg-white text-black p-4 rounded-full border-1 border-[#EBEBEB] cursor-pointer z-10"
         >
           <MdArrowForwardIos size={12} />
         </button>
