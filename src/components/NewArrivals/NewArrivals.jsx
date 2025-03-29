@@ -97,16 +97,16 @@ function NewArrivals() {
           <SwiperSlide key={product.id}>
             <div className="relative p-4 rounded-lg">
               {product.discount !== null && (
-                <div className="absolute top-4 left-4 bg-[#D73F0F] text-white text-[13px] px-2.5 py-1 rounded-[30px]">
+                <div className="absolute top-8 left-8 bg-[#D73F0F] text-white text-[13px] px-2.5 py-1 rounded-[30px]">
                   -{product.discount}%
                 </div>
               )}
               {product.status === "Sold Out" ? (
-                <div className="absolute top-4 left-4 bg-[#757575] text-white text-[13px] px-2.5 py-1 rounded-[30px]">
+                <div className="absolute top-8 left-8 bg-[#757575] text-white text-[13px] px-2.5 py-1 rounded-[30px]">
                   {product.status}
                 </div>
               ) : product.status === "Pre-Order" ? (
-                <div className="absolute top-12 left-4 bg-[#177983] text-white text-[13px] px-2.5 py-1 rounded-[30px]">
+                <div className="absolute top-16 left-8 bg-[#177983] text-white text-[13px] px-2.5 py-1 rounded-[30px]">
                   {product.status}
                 </div>
               ) : null}
