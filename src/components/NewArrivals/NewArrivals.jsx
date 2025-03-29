@@ -124,13 +124,20 @@ function NewArrivals() {
                   {"★".repeat(product.rating)}
                 </div>
 
-                <div className="flex items-center space-x-2">
-                  <span className="text-sm font-medium text-[#111111]">
-                    ${product.price.toFixed(2)}
-                  </span>
-                  {product.oldPrice && (
-                    <span className="text-gray-400 line-through">
-                      ${product.oldPrice.toFixed(2)}
+                <div className="flex items-center ">
+                  {product.oldPrice ? (
+                    <div className="space-x-2">
+                      <span className="text-sm font-medium text-[#D73F0F]">
+                        ${product.price.toFixed(2)}
+                      </span>
+
+                      <span className="text-[#999999] text-sm font-medium line-through">
+                        ${product.oldPrice.toFixed(2)}
+                      </span>
+                    </div>
+                  ) : (
+                    <span className="text-sm font-medium text-[#111111]">
+                      ${product.price.toFixed(2)}
                     </span>
                   )}
                 </div>
